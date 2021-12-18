@@ -7,8 +7,8 @@
 
 body,
 html {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   /* background-color:skyblue; */
 }
 
@@ -16,8 +16,7 @@ div#container {
   width: 100%;
   height: auto;
   /* border: 2px solid black; */
-  background-color: ;
-  text-align: center;
+   text-align: center;
 }
 
 nav {
@@ -115,11 +114,13 @@ section#portfolio {
 }
 
 /* portfolio h1 styles start here */
+
 section#portfolio h1{
 /* background-color: yellow; */
 color: lightblue;
-width: 900px;
+width: 100%;
 margin-top: 120px;
+
 pushing the word below header when click
 }
 section#portfolio h1:hover {
@@ -149,16 +150,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#container {
-  /* background-color: yellow; */
-  /* border-color: black; */
-  /* border-style: solid; */
-  /* width: 100vw; */
-  /* height: 100vh; */
-
-  /* scroll-behavior: smooth; */
 }
 
 
