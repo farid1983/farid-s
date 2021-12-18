@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  /* background-color:skyblue; */
+}
+
+div#container {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid black; */
+  background-color: ;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15vh;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 200ms ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #ff6464;
+}
+
+.button:hover {
+  color: #ff6464;
+}
+
+.button {
+  border: 1px solid #fff;
+  padding: 0.4em 1em;
+  font-size: 1.14rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+}
+
+button:hover {
+  background-color: (255, 0, 0, 0.6);
+  color: #fff;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+#about {
+  min-height: 100vh;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff; */
+}
+
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff; */
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+section#portfolio {
+  /* background-color: skyblue; */
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  /* background-color: yellow; */
+  /* border-color: black; */
+  /* border-style: solid; */
+  width: 100vw;
+  height: 100vh;
+
+  scroll-behavior: smooth;
+}
+
+.menu:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.changeColor {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.changeColor a {
+  color: #000;
+}
+
+.changeColor a:hover {
+  color: #ff6464;
+}
+
+.changeColor .button {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.changeColor .button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.floating-menu {
+  font-family: sans-serif;
+  /* background: yellowgreen; */
+  padding: 5px;
+  width: 100px;
+  z-index: 100;
+  position: fixed;
+  bottom: 50%;
+  right: 0px;
+}
+
+.floating-menu a {
+  font-size: 0.9em;
+  display: block;
+  margin: 0 0.5em;
+  color: black;
+  padding-top: 20px;
+}
+
+.floating-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* <!-- timeline start here --> */
+
+.portfolio {
+  width: 225px;
+  height: 300px;
+  overflow: hidden;
+  /* background-color: lightgray; */
+  text-align: center;
+  color: black;
+  margin: 20px 10px;
+  /* transition: background-color 3s, box-shadow 2s; */
+  /* transition control background or box shadow color duration */
+  transition: all 0.7s;
+  font-weight: 200;
+}
+
+.portfolio h3 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.portfolio p {
+  font-size: 10px;
+}
+
+.portfolio:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.portfolio img {
+  height: 200px;
+}
+
+.portfolio {
+  width: 50%;
+}
+
+@media screen and (max-width : 700px){
+  section{
+      flex-direction: collumn;
+      justify-content: space-around;
+      flex-wrap: wrap;
+     
+  }
