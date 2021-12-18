@@ -24,11 +24,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  min-height: auto;
   position: fixed;
   width: 100%;
   z-index: 10;
   transition: 200ms ease-in-out;
+  padding-top: 50px;
 }
 
 a {
@@ -272,7 +273,7 @@ section {
   }
   
   .portfolio:hover .overlay {
-    opacity: 1;
+    opacity: -1;
   }
   
   .text {
