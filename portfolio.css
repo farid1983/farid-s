@@ -113,6 +113,33 @@ section#portfolio {
   align-items: center;
 }
 
+/* portfolio h1 styles start here */
+section#portfolio h1{
+/* background-color: yellow; */
+color: lightblue;
+width: 900px;
+margin-top: 120px;
+pushing the word below header when click
+}
+section#portfolio h1:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* portfolio h1 styles end here */
 
 section {
   width: 100%;
@@ -133,11 +160,6 @@ section {
   /* scroll-behavior: smooth; */
 }
 
-.menu:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  background-color: lightgreen;
-  cursor: pointer;
-}
 
 .changeColor {
   background-color: #fff;
@@ -186,7 +208,6 @@ section {
   flex-direction: column;
 }
 
-/* <!-- timeline start here --> */
 
 .portfolio {
   width: 225px;
@@ -200,6 +221,7 @@ section {
   /* transition control background or box shadow color duration */
   transition: all 0.7s;
   font-weight: 200;
+  position: relative;
 }
 
 .portfolio h3 {
@@ -218,6 +240,7 @@ section {
 }
 
 .portfolio img {
+  display: block;
   height: 200px;
 }
 
@@ -232,3 +255,36 @@ section {
       flex-wrap: wrap;
      
   }
+
+  /* portfolio fade in menu start here */
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .portfolio:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* portfolio fade in menu end here */
