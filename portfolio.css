@@ -26,7 +26,8 @@ div#container {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   min-height: auto;
   position: fixed;
