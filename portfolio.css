@@ -266,14 +266,12 @@ section {
 .portfolio {
   width: 20%;
 }
-/* 
-@media screen and (min-width : 700px){
-  section#portfolio{
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-     
-  } */
+
+@media screen and (min-width: 700px) {
+  .icon {
+    display: none;
+  }
+}
 
 /* responsive nav bar start */
 @media screen and (max-width: 700px) {
@@ -284,6 +282,10 @@ section {
   .link,
   .button {
     display: none;
+  }
+
+  header {
+    background-position: left;
   }
 }
 /* responsive nav bar end */
