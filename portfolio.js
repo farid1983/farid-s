@@ -17,4 +17,6 @@ const observer = new IntersectionObserver (entries => {
 
 observer.observe(header)
 
-// <!-- timeline start here -->
+
+// menu bar
+
